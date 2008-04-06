@@ -1,32 +1,31 @@
 = expand_path
 
-* FIX (url)
+* http://expand_path.rubyforge.org
 
 == DESCRIPTION:
 
-FIX (describe your package)
-
-== FEATURES/PROBLEMS:
-
-* FIX (list of features or problems)
+#expand_path method for String
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+  require "rubygems"
+  require "expand_path"
+  $:.unshift __FILE__.expand_path("..", "lib")
+  $:.unsfhit __FILE__.expand_path("../helpers")
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* Ruby
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+* gem install expand_path
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2008 FIX
+Copyright (c) 2008 Pat Maddox
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

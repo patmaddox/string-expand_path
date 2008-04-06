@@ -1,8 +1,0 @@
-$:.unshift(File.dirname(__FILE__)) unless
-  $:.include?(File.dirname(__FILE__)) || $:.include?(File.expand_path(File.dirname(__FILE__)))
-
-class String
-  def expand_path(*suffix)
-    File.expand_path(File.join(File.dirname(self), *suffix))
-  end
-end
